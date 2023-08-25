@@ -1,4 +1,4 @@
-package com.jose.springalb.controller
+package com.jose.springasg.controller
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
