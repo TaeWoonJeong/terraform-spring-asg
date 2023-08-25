@@ -35,6 +35,8 @@ sudo unzip /home/ubuntu/spring.zip -d /home/ubuntu/spring-init >> "$LOG_FILE" 2>
 write_to_log "File spring.zip extracted."
 
 nohup java -jar /home/ubuntu/spring-init/build/libs/spring-asg-0.0.1-SNAPSHOT.jar 1>> /home/ubuntu/spring.log 2>> /home/ubuntu/spring-error.log &
+sudo chmod 777 /home/ubuntu/spring.log
+sudo chmod 777 /home/ubuntu/spring-error.log
 write_to_log "Script execution completed."
 
 END_TIME=$(date +%s)
