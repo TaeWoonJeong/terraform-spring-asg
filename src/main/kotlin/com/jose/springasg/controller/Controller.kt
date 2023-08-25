@@ -17,4 +17,9 @@ class Controller {
     fun info() : String {
         return "현재 시간은 "+ LocalDateTime.now() + "이고, uuid 값 : "+uuid
     }
+
+    @GetMapping("/codedeploy")
+    fun test() : String {
+        return "codedeploy 작동 확인용도, 현재 시간은 "+ LocalDateTime.now() + "이고, uuid 값 : "+uuid
+    }
 }
