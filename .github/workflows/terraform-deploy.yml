@@ -1,5 +1,5 @@
 # terraform-deploy.yml
-name: "Terraform-Destroy-Create-Deploy"
+name: "Terraform-Create-Deploy"
 
 on:
   workflow_dispatch:
@@ -68,7 +68,7 @@ jobs:
 
     env:
       S3_BUCKET_NAME: tw-spring-bucket
-      PROJECT_NAME: spring
+      PROJECT_NAME: spring-codedeploy
       DEPLOY_APPLICATION: spring-autoscaling-deploy
       DEPLOY_GROUP_NAME: terraform-develop
 
