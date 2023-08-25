@@ -37,6 +37,10 @@ write_to_log "File spring.zip extracted."
 sudo nohup java -jar /home/ubuntu/spring-init/build/libs/spring-alb-0.0.1-SNAPSHOT.jar 1>> /home/ubuntu/spring.log 2>> /home/ubuntu/spring-error.log &
 write_to_log "Script execution completed."
 
+sudo chmod -R 777 /home/ubuntu/spring-init
+sudo chmod 777 /home/ubuntu/spring.log
+sudo chmod 777 /home/ubuntu/spring-error.log
+
 END_TIME=$(date +%s)
 ELAPSED_TIME=$((END_TIME - START_TIME))
 
